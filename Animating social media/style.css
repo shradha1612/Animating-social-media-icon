@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #ececec;
+}
+.container .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    background: #ffffff;
+    border-radius: 50px;
+    margin:0 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+10px 10px 15px rgba(70,70,70,0.12);
+
+}
+.container .button:hover{
+    width: 180px;
+}
+.container .button .icon{
+    display: inline-block;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+.container .button:nth-child(1):hover .icon{
+    background: rgb(233, 90, 114);
+}
+.container .button:nth-child(2):hover .icon{
+    background: rgb(136, 125, 235);
+}
+.container .button:nth-child(3):hover .icon{
+    background: rgb(93, 240, 125);
+}
+.container .button .icon .i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.container .button:hover .icon .i{
+    color: #ffffff;
+}
+.container .button span{
+    font-size: 20px;
+    line-height: 60px;
+    margin-left: 10px;
+    font-weight: 900;
+    transition: all 0.3s ease-out;
+}
+.container .button:nth-child(1) span{
+    color: rgb(233, 90, 114);
+}
+.container .button:nth-child(2) span{
+    color: rgb(136, 125, 235);
+}
+.container .button:nth-child(3) span{
+    color: rgb(93, 240, 125);
+}
